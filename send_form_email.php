@@ -8,7 +8,7 @@ if(isset($_POST['email'])) {
 
     $email_to = "geethujose.mec@gmail.com";
 
-    $email_subject = "Your email subject line";
+    $email_subject = "Need Help with Installation Form";
 
 
 
@@ -134,7 +134,7 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 ?>
   <!-- include your own success html here -->
-  Thank you for contacting us. We will be in touch with you very soon.
+  <div class="feedback">Thank you for contacting us. We will be in touch with you very soon.</div>
   <?php
 
 }
