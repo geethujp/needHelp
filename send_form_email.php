@@ -59,7 +59,7 @@ if(isset($_POST['email'])) {
     $address = $_POST['address']; // required
     $product = $_POST['product']; // required
     $date = $_POST['date']; // required
-    $bill_number = $_POST['bill-number']; // required
+    $bill_number = $_POST['bill_number']; // required
 
 
     $error_message = "";
@@ -126,11 +126,9 @@ if(isset($_POST['email'])) {
 
 $headers = 'From: '.$email_from."\r\n".
 
-'Reply-To: '.$email_from."\r\n" ;
+'Reply-To: '.$email_from."\r\n" .
 
-// 'X-Mailer: PHP/' . phpversion();
-$headers .= "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+'X-Mailer: PHP/' . phpversion();
 
 mail($email_to, $email_subject, $email_message, $headers);
 
