@@ -1,0 +1,190 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+/* Header */
+
+header {
+  height: 92px;
+}
+
+
+/* Logo*/
+
+.jacks-logo {
+  height: 92px;
+  float: left;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+
+/* Contact number*/
+
+.jacks-contact-num {
+  float: right;
+  padding-right: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-icon {
+  height: 36px;
+  margin-right: 5px;
+}
+
+.jacks-contact-num span {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+/*Need Help Content*/
+
+main {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.needHelp-content {
+  background: url('../images/Bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 50%;
+  box-sizing: border-box;
+}
+
+.need-help-form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 10%;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.form-title {
+  color: #000;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.need-help-form input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #b6c1c6;
+  font-size: 14px;
+  height: 32px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 5px 0;
+  width: 90%;
+  font-size: 12px;
+  padding-right: 7%;
+}
+
+.need-help-form label {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+/* Placeholder*/
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #b6c1c6;
+  font-size: 12px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b6c1c6;
+  font-size: 12px;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b6c1c6;
+  font-size: 12px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b6c1c6;
+  font-size: 12px;
+}
+
+button {
+  width: 134px;
+  height: 42px;
+  background-color: #005387;
+  border-radius: 21px;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+
+/* Footer */
+
+footer {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: 600;
+  color: #b4b4b4;
+}
+
+footer span {
+  padding: 0 20px;
+}
+
+input:focus:invalid {
+  background-image: url('../images/invalid.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 98%;
+}
+
+input:required:valid {
+  background-image: url('../images/valid.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 98%;
+}
